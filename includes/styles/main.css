@@ -1,0 +1,274 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+}
+* {
+    outline: 0;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'PNR';
+    src: url('../fonts/ProximaNova-Regular.otf');
+}
+
+/* MAIN */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-weight: 400;
+}
+body {
+    background-color: #F9F9F9;
+    font-size: 1.6rem;
+    font-family: 'PNR';
+}
+
+/* MAIN */
+.mainWrapper, .headerWrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* HEADER */
+.mainHeader {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: #FFF;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 2px 4px 0 rgba(0,0,0,.06);
+}
+.logo, .searchBar {
+    float: left;
+}
+.logo {
+    width: 34px;
+    height: 34px;
+    font-size: 2.1em;
+    margin: 8px 0;
+    color: #DA552F;
+}
+.logoFont {
+    margin-left: .04em;
+    padding-top: .25em;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #FFF;
+    text-align: center;
+}
+
+/* SEARCH BAR */
+.searchBar {
+    width: 300px;
+    max-width: 300px;
+    margin-left: 10px;
+}
+.searchIcon {
+    width: 15px;
+    height: 15px;
+    color: #E2E2E2;
+    position: absolute;
+    margin: 17px auto auto 8px;
+    font-size: 2em;
+}
+.searchInput {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #F2F2F2;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 4px 4px 4px 31px;
+    letter-spacing: .02em;
+}
+.login {
+    float: right;
+    padding: 14px 0;
+    font-weight: 600;
+    font-size: .7em;
+    letter-spacing: .1em;
+    line-height: 16px;
+    color: #999;
+}
+.loginIcon {
+    font-size: 2.4em;
+    margin-right: 10px;
+    font-weight: 500;
+    line-height: 12px;
+}
+.loginLink {
+    display: inline-block;
+    float: right;
+    font-size: .97em;
+    margin-top: 4px;
+    text-decoration: none;
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.loginLink:hover, .loginLink:active {
+    color: #DA552F;
+}
+
+
+/* CONTENT */
+.contentWrapper {
+    width: 100%;
+    height: 400px; /* REMOVE */
+    margin: 31px 0;
+}
+.rightSide, .leftSide, .mainContent {
+    float: left;
+    height: 800px; /* REMOVE */
+}
+.rightSide {
+    width: 250px;
+}
+.rightTop {
+    border: 1px solid #F2F2F2;
+    background-color: #FFF;
+}
+.leftSide {
+    width: 145px;
+}
+.mainContent {
+    width: 725px;
+    margin:0 20px;
+    border: 1px solid #F2F2F2;
+    background-color: #FFF;
+}
+.topWrapper {
+    width: 100%;
+}
+.mainHeading {
+    display: block;
+    float: left;
+    font-size: 1.3em;
+    margin: 21px 19px 18px 19px;
+}
+.filters {
+    float: right;
+    margin-top: 28px;
+    margin-right: 27px;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+.filter {
+    height: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+    padding-left: 2px
+}
+.filter:hover, .filter:focus {
+    text-decoration: underline;
+}
+.filter:first-child {
+    border-right: 1px solid #F2F2F2;
+    padding-right: 6px;
+}
+.productBox {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.productBoxInner{
+    width: 682px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-top: 1px solid #F2F2F2;
+}
+.productBox:hover {
+    background-color: #F9F9F9;
+}
+.productThumbnail {
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 25px;
+    margin-left: 4px;
+    background-color: #333;
+}
+.productTitle {
+    display: block;
+    font-size: 1.2em;
+    letter-spacing: .03em;
+    margin-top: 17px;
+}
+.productDescription {
+    display: block;
+    margin-top: 5px;
+    font-size: .9em;
+    letter-spacing: -.01em;
+    color: #999;
+}
+.sideBarTitle {
+    color: #000;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: .8em;
+    line-height: .7em;
+    letter-spacing: .064em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+}
+.sideBarHeading {
+    display: block;
+    margin: 21px 20px 10px 20px;
+    font-size: 1.2em;
+    letter-spacing: .02em;
+    line-height: 1.2em;
+    color: #000;
+}
+.sideBarText {
+    display: inline-block;
+    margin: 0 20px 21px 20px;
+    font-size: .9em;
+    line-height: 1.25em;
+    color: #999;
+    letter-spacing: -.01em;
+}
+.emoji {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    margin: 0 .05em 0 .1em;
+}
+
+
+/* NAV */
+.navBar {
+    margin-bottom: 54px;
+}
+.navLinks {
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    letter-spacing: -.01em;
+}
+.navTitle {
+    display: inline-block;
+    padding: 3px 5px 1px 5px;
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 1.3em;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navTitle:hover {
+    background-color: #F2F2F2;
+    color: #000;
+}

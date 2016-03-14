@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Product Hunt</title>
     <link rel="stylesheet" href="includes/styles/main.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <header class="mainHeader">
         <div class="headerWrapper">
             <div class="logo">
-                <div class="logoFont">P</div>
+                <i class="fa fa-product-hunt"></i>
             </div>
 
             <form action="" class="searchBar">
-                <i class="fa fa-search"></i>
-                <input type="search" class="searchInput" placeholder="Discover your next favorite thing..." />
+                <label for="search"><i class="fa fa-search searchIcon"></i></label>
+                <input type="search" id="search" name="search" class="searchInput" placeholder="Discover your next favorite thing..." />
             </form>
+
+            <div class="login">
+                <span class="loginIcon">&hellip;</span>
+                <a href="login.html" class="loginLink">login</a>
+            </div>
         </div>
     </header>
 
@@ -26,17 +31,56 @@
 
     <div class="contentWrapper group">
         <aside class="leftSide">
-            <nav class="navBar">
-                <a href="index.html" class="navLinks">Home</a>
-                <a href="" class="navLinks">Collections</a>
-                <a href="" class="navLinks">LIVE Chats</a>
+            <nav class="navBar group">
+                <a href="index.html" class="navLinks"><span class="navTitle">Home</span></a>
+                <a href="" class="navLinks"><span class="navTitle">Collections</span></a>
+                <a href="" class="navLinks"><span class="navTitle">LIVE Chats</span></a>
+            </nav>
+            <nav class="navBar group">
+                <span class="sideBarTitle">categories</span>
+                <a href="" class="navLinks"><span class="navTitle">Tech</span></a>
+                <a href="" class="navLinks"><span class="navTitle">Games</span></a>
+                <a href="" class="navLinks"><span class="navTitle">Books</span></a>
+                <a href="" class="navLinks"><span class="navTitle">Podcasts</span></a>
             </nav>
         </aside>
 
-        <main class="mainContent">
-        </main>
+        <section class="mainContent">
+            <div class="topWrapper group">
+                <span class="mainHeading">Today</span>
+                    <div class="filters">
+                        <a href="." class="filter">Popular</a>
+                        <a href="newest.html" class="filter">Newest</a>
+                    </div>
+            </div>
+
+                    <div class="productBox">
+                        <div class="productBoxInner group">
+                            <img src="includes/images/echo.png" alt="Echo Dot by Amazon" class="productThumbnail" />
+                            <div class="product">
+                                <span class="productTitle">Echo Dot by Amazon</span>
+                                <span class="productDescription">Amazon's latest additions to the Echo family.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productBox">
+                        <div class="productBoxInner group">
+                            <img src="includes/images/echo.png" alt="Echo Dot by Amazon" class="productThumbnail" />
+                            <div class="product">
+                                <span class="productTitle">Echo Dot by Amazon</span>
+                                <span class="productDescription">Amazon's latest additions to the echo family.</span>
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
 
         <aside class="rightSide">
+            <div class="rightTop">
+                <span class="sideBarHeading">Product Hunt is more fun with friends <img draggable="false" class="emoji" alt="😻" src="https://twemoji.maxcdn.com/36x36/1f63b.png" /></span>
+                <span class="sideBarText">Login to see what your friends are upvoting.</span>
+            </div>
         </aside>
     </div><!-- END .contentWrapper -->
 
